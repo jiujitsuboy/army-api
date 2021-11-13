@@ -38,25 +38,16 @@ public class ArmyGenerator {
 
 			long soldierTypeSubSet = ((nroSoldiers > soldierTypes.size()) ? (nroSoldiers) / soldierTypes.size() : 1);
 
-//			System.out.println("soldierTypeSubSet: " + soldierTypeSubSet);
-//			System.out.println("soldierTypes.size() - 1d: " + (soldierTypes.size() - 1d));
-//			System.out.println("(soldierTypeSubSet / (soldierTypes.size() - 1d)): "
-//					+ (soldierTypeSubSet / (soldierTypes.size() - 1d)));
-//			System.out.println();
-
 			for (int index = 0; index < soldierTypes.size(); index++) {
 
 				double variableRange = Math.floor(soldierTypeSubSet / (soldierTypes.size() - 1d));
-//				System.out.println("variableRangeO: " + variableRange);
+
 				variableRange = (variableRange == 0 && (soldierTypeSubSet > 1 || nroSoldiers > soldierTypes.size())) ? 1
 						: variableRange;
-//				System.out.println("variableRangeA: " + variableRange);
+
 
 				long soldierTypeSubSetAdjustment = (long) Math.round(Math.random() * variableRange);
 				boolean add = (Math.random() > 0.5);
-
-//				System.out.println("soldierTypeSubSetAdjustment: " + soldierTypeSubSetAdjustment);
-//				System.out.println("add: " + add);
 
 				if (index + 1 == soldierTypes.size()) {
 					result = (nroSoldiers - accumulate >= 0) ? nroSoldiers - accumulate : 0;
@@ -64,16 +55,9 @@ public class ArmyGenerator {
 					result = (add) ? soldierTypeSubSet + soldierTypeSubSetAdjustment
 							: (Math.abs(soldierTypeSubSet - soldierTypeSubSetAdjustment) == 0) ? soldierTypeSubSet
 									: Math.abs(soldierTypeSubSet - soldierTypeSubSetAdjustment);
-//					if (result <= 0) {
-//						System.out.println("variable: " + soldierTypeSubSetAdjustment);
-//						System.out.println("NEGATIVO");
-//					}
+
 					accumulate += result;
 				}
-
-//				System.out.println("result: " + result);
-//				System.out.println("soldier: " + soldierTypes.get(index));
-//				System.out.println();
 
 				if (accumulate > nroSoldiers) {
 					result = 0;
