@@ -37,7 +37,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>lib/</classpathPrefix>
-							<mainClass>com.goodgame.studio.Client</mainClass>
+							<mainClass>com.goodgame.studio.client.Client</mainClass>
 						</manifest>
 					</archive>
 				</configuration>

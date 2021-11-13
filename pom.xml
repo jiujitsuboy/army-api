@@ -20,7 +20,7 @@
 				<configuration>
 					<mainClass>com.goodgame.studio.client.Client</mainClass>
 				</configuration>
-			</plugin>
+			</plugin>			
 		</plugins>
 	</build>
 </project>

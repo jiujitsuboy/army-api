@@ -14,6 +14,10 @@ public class ArmyGenerator {
 
 	private List<String> soldierTypes;
 
+	/**
+	 * Class constructor
+	 * @param soldierTypes list of soldier types
+	 */
 	public ArmyGenerator(List<String> soldierTypes) {
 		this.soldierTypes = soldierTypes;
 	}	
