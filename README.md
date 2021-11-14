@@ -6,23 +6,23 @@ API to generate an army with random distribution of soldiers types
 The generator has one class called **ArmyGenerator** which offers a public method called **generateArmy()** which expects the number of desired soldiers to generate the army.
 The type of soldiers of the army is configured by a list passed in the constructor of the class. 
 
-![](generator/src/main/resources/generatorMethod.png)
+![](images/generatorMethod.png)
 
 
 
 The type of soldiers distribution is obtained randomly but meeting the request number of soldiers. On every execution the type of soldiers distribution is randomly generated even if you call the generator multiple times with the same request number of soldiers. 
 
-![](generator/src/main/resources/output.png)
+![](images/output.png)
 
 The generator always generate at least one type of each soldier unless the requested number of soldiers is less than the type of soldiers configured.
 
-![](generator/src/main/resources/outputLessSoldiersThanTypes.png)
+![](images/outputLessSoldiersThanTypes.png)
 
 ## Execute the Client
 
 The client emulate the consumption of the api. The helper method getTypeOfSoldiers() generate the list of type of soldiers. This method could load and fill this list from differente sources *(database, text file, rest endpoint, etc)* as needed, for this example it has a hardcode list.
 
-![](generator/src/main/resources/typeOfSoldiers.png)
+![](images/typeOfSoldiers.png)
 
 You can called using the following maven command (**NUMBER_OR_SOLDIERS**: Integer number or soldiers you want).
 
@@ -36,7 +36,7 @@ mvn compile -pl client exec:java
 
 ## Code Coverage
 
-![](generator/src/main/resources/codeCoverage.png)
+![](images/codeCoverage.png)
 
 ## Algorithm  Complexity
 
