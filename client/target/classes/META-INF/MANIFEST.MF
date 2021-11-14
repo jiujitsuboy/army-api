@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Built-By: Jose
-Build-Jdk: 16.0.1
-Class-Path: lib/generator-1.0.0.jar
-Main-Class: com.goodgame.studio.client.Client
-Created-By: Maven Integration for Eclipse
-
