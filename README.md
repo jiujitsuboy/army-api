@@ -41,7 +41,7 @@ mvn compile -pl client exec:java
 ## Algorithm  Complexity
 
 - **Time Complexity:** *O(1)* The algorithm doesn´t depend on the request number of soldiers (input) for the generation.
-- **Space Complexity:** *O(n)* The algorithm create a map which size is dictated by the request number of soldiers (input).
+- **Space Complexity:** *O(1)* The algorithm create a map which size is dictated by the size of the type of soldiers array and not the request number of soldiers (input).
 
 
 
